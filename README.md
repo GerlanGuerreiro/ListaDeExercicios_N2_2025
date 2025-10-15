@@ -1,0 +1,1 @@
+# ListaDeExerc-cios_N2_2025
