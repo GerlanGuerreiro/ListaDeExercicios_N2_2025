@@ -90,6 +90,7 @@ Menu de operações:
     Sair
 
 O programa deve permanecer em execução até o usuário escolher a opção 6 (Sair).
+```
 🧮 Questão 02 – Vetor Dinâmico
 
 Implemente um programa em C com as seguintes funções:
