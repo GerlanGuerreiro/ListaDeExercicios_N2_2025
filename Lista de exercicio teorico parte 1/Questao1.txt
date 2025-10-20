@@ -1,5 +1,0 @@
-1) O que significa alocação estática de memória para um conjunto de elementos? 
-
-R: A alocação estática ocorre quando o espaço necessário para uma variável é definido no momento da compilação (antes do programa rodar) e não muda enquanto o programa estiver em execução.
-
-MOREIRA, Jander. Alocação de memória. Disponível em: http://livresaber.sead.ufscar.br:8080/jspui/handle/123456789/1505. Acesso em: 15 out. 2025.
