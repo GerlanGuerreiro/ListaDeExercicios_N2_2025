@@ -1,0 +1,6 @@
+2) Qual a diferença entre alocação estática e alocação dinâmica?
+
+R: A diferença entre alocação estática e alocação dinâmica reside primariamente no momento da reserva de memória e na área da memória utilizada, sendo que a alocação dinâmica resolve problemas de inflexibilidade e desperdício ligados à alocação estática no contexto de estruturas de dados.
+
+MOREIRA, Jander. Alocação dinâmica de memória. [S.l.: s.n., s.d.]. Disponível em: http://livresaber.sead.ufscar.br:8080/jspui/bitstream/123456789/1505/1/alocacao_dinamica.pdf. Acesso em: Outubro, 2025.
+

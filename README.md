@@ -6,7 +6,9 @@
 
 👥 Equipe
 Gabriel Fernando Souza da Silva 2408416
-Gerlan Guerreiro Damasceno	2410324
+
+Gerlan Guerreiro Damasceno 2410324
+
 Lucas Del-Aguila Maia 2405848
 
 

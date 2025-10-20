@@ -1,0 +1,14 @@
+4) O que é uma estrutura de dados homogêneos?
+
+R: Com base nas fontes fornecidas, uma estrutura de dados homogêneos é aquela que armazena um **conjunto de dados de mesmo tipo**.
+Os exemplos de estruturas de dados homogêneos citados nas fontes incluem:
+
+1.  **Arrays (Vetores):** O recurso padrão usado para guardar coleções de dados na memória é o emprego de arranjos (usualmente vetores). Eles são utilizados, por exemplo, para manter um **conjunto de temperaturas** individuais em memória.
+2.  **Alocação Dinâmica de Vetores:** A alocação dinâmica pode ser aplicada para reservar espaço no monte (*heap*) para um conjunto de dados de mesmo tipo. Por exemplo, é possível alocar espaço para 100 valores inteiros em um **único bloco contínuo de memória**.
+3.  **Matrizes:** A alocação de matrizes segue uma ideia similar à alocação de vetores, pois envolve a alocação de todo o bloco de memória necessário de uma única vez, de forma a se ter um segmento de **memória contínuo** para dados do mesmo tipo.
+
+A capacidade de alocar espaço para um conjunto de valores de mesmo tipo é o que torna o recurso da alocação dinâmica particularmente útil. Em C, ao alocar dinamicamente um vetor, utiliza-se o tamanho de um elemento multiplicado pela quantidade desejada (exemplo: `elementos * sizeof(float)` para um vetor de números reais).
+
+
+MOREIRA, Jander. Alocação dinâmica de memória. [S.l.: s.n., s.d.]. Disponível em: http://livresaber.sead.ufscar.br:8080/jspui/bitstream/123456789/1505/1/alocacao_dinamica.pdf. Acesso em: Outubro, 2025.
+

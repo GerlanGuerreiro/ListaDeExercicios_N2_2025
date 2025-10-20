@@ -1,0 +1,8 @@
+5) O que é uma estrutura de dados heterogêneos?
+
+R: Uma estrutura de dados heterogêneos é aquela que permite a representação de dados composta por diferentes tipos simultaneamente. Essa variação de tipos de dados em uma única estrutura é necessária porque a maioria dos problemas modelados exige a combinação de informações de naturezas diversas, como strings, inteiros, datas, entre outros.
+
+* Definição: Uma estrutura de dados, também conhecida como registro, pode ser definida como uma coleção de variáveis que podem ser de tipos iguais ou diferentes, reunidas sob um único nome.
+
+
+BALIEIRO, Ricardo. Estrutura de dados. 1. ed. Rio de Janeiro: SESES, 2015. 176 p. ISBN 978-85-60923-34-2. Disponível em: https://hood.com.br/new/filegator/repository/Estrutura%20de%20Dados/10%20Livro%20Estrutura%20de%20Dados.pdf. Acesso em: [Outubro, 2025].
