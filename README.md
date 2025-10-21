@@ -4,7 +4,8 @@
 📍 Universidade: Centro Universitário Fametro
 👨‍🏫 Professor: Tiago Santos Figueira
 
-👥 Equipe
+👥 Equipe:
+
 Gabriel Fernando Souza da Silva 2408416
 
 Gerlan Guerreiro Damasceno 2410324
