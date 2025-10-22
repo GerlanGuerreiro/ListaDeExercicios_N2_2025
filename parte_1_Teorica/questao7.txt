@@ -1,0 +1,11 @@
+7) O que é uma lista simplesmente encadeada?
+R: Uma lista simplesmente encadeada é um tipo de estrutura de dados em que os elementos (ou nós) são armazenados de forma encadeada, ou seja, cada elemento contém um dado e uma referência (ou ponteiro) para o próximo elemento da lista.
+Portanto, uma lista simplesmente encadeada é uma estrutura linear de dados que permite armazenar e gerenciar elementos de forma dinâmica, usando referências para conectar os nós em sequência, facilitando certas operações como inserção e remoção, mas com busca sequencial.
+Ilustração do diagrama
+Head/inicio --> [A | prox] --> [B | prox] --> [C | prox] --> NULL
+* Head é o início da lista.
+* Cada nó só conhece apenas o próximo nó.
+Referência 
+MADEIRA, Maicon Francisco; AZEVEDO SIMÕES, Priscyla Waleska Tagino de; MARTINS, Paulo João. ODIN – Ambiente Web de Apoio ao Ensino de Estruturas de Dados Lista Encadeada. Anais SulComp, 2012. Disponível em: https://www.academia.edu/download/80338395/752.pdf. Acesso em: 22/10/2025
+
+
