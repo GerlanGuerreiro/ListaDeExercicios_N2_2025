@@ -1,0 +1,9 @@
+7) O que é uma lista duplamente encadeada?
+R: De acordo com o artigo GERENCIADOR DE MEMÓRIA dos autores Eder Augusto Penharbel, Erick José Heiler, Halena Kulmann Duarte e Ricardo de?la?Rocha?Ladeira, publicado em 2023, uma lista duplamente encadeada é utilizada como estrutura de dados para gerenciar blocos de memória livres e ocupados. No trabalho, cada nó dessa lista contém informações sobre o endereço inicial, o comprimento do bloco e uma possível referência ao processo que está utilizando o bloco. A lista permite que, ao se realizar a alocação e a desalocação de memória, os blocos sejam fragmentados ou agrupados conforme necessário, aproveitando o encadeamento em ambos os sentidos (ponteiro para o próximo e para o anterior). Esse uso viabiliza inserções e remoções eficientes no meio da estrutura e facilita a reorganização dos blocos de memória de forma dinâmica, de acordo com o contexto da simulação desenvolvida pelos autores.
+Ilustração do diagrama 
+NULL <-- [ Anterior | A | Proximo] <---->[Anterior | B | Proximo] <----> [Anterior| C | Proximo]--> NULL
+Cada nó está ligado ao anterior e ao próximo, formando uma sequência encadeada nos dois sentidos. Essa característica torna a lista duplamente encadeada ideal para aplicações que exigem manipulação frequente de elementos, como sistemas operacionais e gerenciadores de memória.
+
+Referência 
+PENHARBEL, Eder Augusto; HEILER, Erick José; DUARTE, Halena Kulmann; LAIDEIRA, Ricardo de la Rocha. Gerenciador de Memória. In: Anais da Mostra de Ensino, Pesquisa e Extensão em Computação (MEPEC), 2023. Disponível em: https://publicacoes.ifc.edu.br/index.php/MEPEC/article/view/4802/4034. Acesso em: 22 out. 2025.
+
