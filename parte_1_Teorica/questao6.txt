@@ -1,0 +1,8 @@
+6) Qual a vantagem das listas sobre os vetores em termos de consumo de memória?
+R: As listas apresentam vantagem sobre os vetores em termos de consumo de memória por utilizarem alocação dinâmica, ou seja, a memória é reservada apenas conforme a necessidade do programa durante sua execução. Já os vetores utilizam alocação estática, possuindo tamanho fixo definido na compilação, o que pode resultar em desperdício de memória quando nem todo o espaço reservado é utilizado.
+Por exemplo, em um programa que armazena nomes de usuários, um vetor com capacidade para 100 posições ocupará memória para todas essas posições mesmo que apenas 20 sejam usadas. Em contraste, uma lista cria novos nós apenas quando um novo nome é inserido, utilizando assim somente a memória necessária.
+De acordo com o relatório Uso Eficiente de Memória em Computação Científica, o uso adequado da memória dinâmica pode reduzir significativamente os requisitos de memória de um programa, tornando sua execução mais eficiente e evitando o uso excessivo de recursos (LNEC, 2016).
+Referência 
+LNEC – Laboratório Nacional de Engenharia Civil. Uso eficiente de memória em computação científica. Relatório 199/2016 – NTIEC, Lisboa, 2016.
+
+
