@@ -1,0 +1,141 @@
+9) O que é uma lista duplamente encadeada? Apresente um diagrama para ilustrar 
+essa estrutura de dados.
+
+R: As listas duplamente ligadas (ou listas duplamente encadeadas) são uma
+extensão da lista simples ligada apresentada no item anterior.
+Uma lista duplamente ligada é formada por um conjunto de nós composto
+normalmente por três elementos, uma variável que armazena a informação,
+podendo ser objetos, números, caracteres etc. e dois ponteiros que possibi-
+litam a ligação entre os nós anterior e posterior desta lista.
+Assim, enquanto em uma lista simples ligada, cada nó (elemento) conhece
+(aponta) apenas o próximo nó, nas listas duplamente ligadas, os nós conhe-
+cem dois outros nós, seu antecessor e seu sucessor, com execeção da cabeça
+e da cauda em que o primeiro aponta apenas para o seu sucessor e o segun-
+do aponta apenas para o seu antecessor.
+Este tipo de solução permite percorrer uma lista nas duas direções. Por exem-
+plo, do início (CABEÇA) até o final da lista (CAUDA),utilizaremos o ponteiro
+PRÓXIMO. Para percorrer a lista do final até o início (em ordem inversa), de-
+vemos começar com o último nó (CAUDA) e, através do ponteiro ANTERIOR,
+percorrer a lista até encontrar o primeiro nó (CABEÇA).
+
+Para explicar de uma forma mais visual, logo abaixo está um diagrama de como essa estrutura de dados funciona:
+
+LISTA DUPLAMENTE ENCADEADA
+==========================
+
+Visão Geral da Lista:
+---------------------
+
+    HEAD                                                    TAIL
+     |                                                       |
+     v                                                       v
+  +------+------+------+    +------+------+------+    +------+------+------+
+  | NULL |  10  | next |--->| prev |  20  | next |--->| prev |  30  | NULL |
+  +------+------+------+    +------+------+------+    +------+------+------+
+           ^                  |                  ^       |
+           |                  |                  |       |
+           +------------------+                  +-------+
+              (ponteiro prev)                (ponteiro prev)
+
+
+Estrutura de um Nó:
+-------------------
+
+  +-------------------+
+  |   PONTEIRO PREV   |  ---> Aponta para o nó ANTERIOR
+  +-------------------+
+  |      DADOS        |  ---> Armazena a informação (int, float, struct, etc)
+  +-------------------+
+  |   PONTEIRO NEXT   |  ---> Aponta para o PRÓXIMO nó
+  +-------------------+
+
+
+Exemplo Detalhado com 4 elementos [5, 15, 25, 35]:
+---------------------------------------------------
+
+NULL <-- [5] <--> [15] <--> [25] <--> [35] --> NULL
+         ^                            ^
+        HEAD                         TAIL
+
+
+Visão expandida simplificada:
+------------------------------
+
+Nó 1:                    Nó 2:                    Nó 3:                    Nó 4:
++-----------+            +-----------+            +-----------+            +-----------+
+| prev:NULL |            | prev: Nó1 |            | prev: Nó2 |            | prev: Nó3 |
+| data: 5   |            | data: 15  |            | data: 25  |            | data: 35  |
+| next: Nó2 |----------->| next: Nó3 |----------->| next: Nó4 |----------->| next:NULL |
++-----------+            +-----------+            +-----------+            +-----------+
+      ^                        |                        |                        |
+      |                        |                        |                        |
+      +------------------------+                        |                        |
+               (seta prev)                              |                        |
+                                                        |                        |
+                                 +----------------------+                        |
+                                          (seta prev)                            |
+                                                                                 |
+                                                          +----------------------+
+                                                                   (seta prev)
+
+
+Operações Básicas:
+------------------
+
+1. INSERÇÃO NO INÍCIO:
+   
+   Antes: HEAD -> [10] <-> [20] <-> [30]
+   
+   Inserir 5:
+   
+   Depois: HEAD -> [5] <-> [10] <-> [20] <-> [30]
+
+
+2. INSERÇÃO NO FIM:
+   
+   Antes: [10] <-> [20] <-> [30] <- TAIL
+   
+   Inserir 40:
+   
+   Depois: [10] <-> [20] <-> [30] <-> [40] <- TAIL
+
+
+3. REMOÇÃO:
+   
+   Antes: [10] <-> [20] <-> [30] <-> [40]
+   
+   Remover 20:
+   
+   Depois: [10] <-------> [30] <-> [40]
+            |              ^
+            +--------------+
+          (atualiza os ponteiros)
+
+
+Navegação Bidirecional:
+-----------------------
+
+Para FRENTE (usando next):
+HEAD -> [A] -> [B] -> [C] -> [D] -> NULL
+
+Para TRÁS (usando prev):
+NULL <- [A] <- [B] <- [C] <- [D] <- TAIL
+
+
+Comparação com Lista Simples:
+------------------------------
+
+Lista Simples:    HEAD -> [A] -> [B] -> [C] -> NULL
+                         (só vai para frente)
+
+Lista Dupla:      NULL <- [A] <-> [B] <-> [C] -> NULL
+                          ^                      ^
+                         HEAD                   TAIL
+                    (vai para frente E para trás)
+
+
+Referência:
+Estrutura de dados/ José Marcio Benite Ramos; Liluyoud Cury de Lacerda; Sara
+Luize Oliveira Duarte; org. Instituto Federal de Educação, Ciência e Tecnologia;
+Universidade Federal do Mato Grosso - Cuiabá : UFMT; Porto Velho: IFRO, 2013.
+Dispon�vel em: https://proedu.rnp.br/bitstream/handle/123456789/1531/15.3_versao_Final_com_ISBN-Estrutura_de_Dados_07.07.14.pdf?sequence=1

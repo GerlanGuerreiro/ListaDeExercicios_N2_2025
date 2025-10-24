@@ -1,0 +1,88 @@
+10) Explique o funcionamento do algoritmo de busca binária e sequencial.
+
+R: Primeiramente, o que seria uma busca binária e busca sequencial? Irei explicar o conceito logo abaixo ⬇️
+
+Pesquisar dados envolve determinar se um valor (denominado chave de pes-
+quisa) está presente no conjunto de dados estudado, e, se estiver, encontrar
+a localização deste valor.
+
+Na Busca sequencial: Ou pesquisa sequencial visita os
+elementos, a partir do primeiro, um após o outro até encontrar a chave
+desejada, ou, se encontrar um valor maior que o pesquisado, interrompe a
+procura.
+
+Implementação da Busca sequencial:
+
+O método abaixo retornará o valor da posição do elemento com o valor pesquisado ou a posição de um elemento com o valor maior. O usuário deverá verificar se a posição retornada possui o valor pesquisado (encontrou) ou se possui um valor maior que o pesquisado (não encontrou). O algoritmo “buscaLinear” recebe (parâmetro) a chave de pesquisa e inicia um comando de repetição (while) com condição de parada: até o final do vetor ou até a chave ser maior que o elemento consultado.
+
+Linguagem usada -> Java
+
+public int buscaLinear(int num) {
+int i = 0;
+
+//O comando While é interrompido quando: O contador “i” é maior que o tamanho do vetor
+ou
+//A chave de pesquisa (num) é maior que o elemento do vetor. Neste caso, deve-se verificar se a chave encontrada corresponde à chave de pesquisa.
+
+while ((i <= vetor.lenght) && (num > vetor[i]))
+i++;
+return i;
+}
+
+
+Busca binária: Ou pesquisa binária divide o conjunto de dados em duas partes e
+continua procurando pela chave na parte que potencialmente ela existiria. É
+eleita a metade da esquerda se a chave for menor que o elemento central,
+caso contrário, a metade da direita é escolhida.
+
+A primeira iteração testa o elemento do meio do array.
+
+a) Se isso corresponder a chave de pesquisa, o algoritmo termina.
+
+b) Se a chave de pesquisa for menor que o elemento do meio, a chave de
+pesquisa não poderá localizar nenhum elemento na segunda metade do
+array e o algoritmo continua apenas na primeira metade.
+
+c) Se a chave de pesquisa for maior que o elemento do meio, a chave de pes-
+quisa não poderá localizar nenhum elemento na primeira metade do array e
+o algoritmo continua apenas com a segunda metade do array.
+
+Repare que a cada iteração, metade do array é descartada, ficando apenas
+a metade que interessa. E assim sucessivamente até localizar o elemento ou
+reduzindo o subarray ao tamanho zero.
+
+O algoritmo retornará um índice (posição de um elemento no vetor) que
+corresponderá ao valor pesquisado ou um índice com um valor diferente
+ao pesquisado. O usuário deverá realizar a comparação para verificar se foi
+encontrado.
+
+public int buscaBinaria(int num) {
+int meio, inicio, fim;
+inicio = 0;
+fim = vetor.length - 1;
+
+//Calcula o elemento central
+meio = (int)(inicio + fim) / 2;
+
+//O comando While termina quando: início maior ou igual ao fim ou a chave de pesquisa (num) igual ao valor central
+while ((inicio < fim) && (num != vetor[meio])) {
+
+//Se chave de pesquisa for menor que o valor central selecionam-se os elementos da esquerda.
+if (num < vetor[meio])
+fim = meio;
+
+//Caso contrário, selecionam-se os elementos da direita
+else
+inicio = meio + 1;
+meio = (int)(inicio + fim) / 2;
+}
+if (num == vetor[meio])
+return meio;
+else
+return meio + 1;
+}
+
+
+Referência:
+Estrutura de dados/ José Marcio Benite Ramos; Liluyoud Cury de Lacerda; Sara Luize Oliveira Duarte; org. Instituto Federal de Educação, Ciência e Tecnologia; Universidade Federal do Mato Grosso - Cuiabá : UFMT; Porto Velho: IFRO, 2013.
+Dispon�vel em: https://proedu.rnp.br/bitstream/handle/123456789/1531/15.3_versao_Final_com_ISBN-Estrutura_de_Dados_07.07.14.pdf?sequence=1

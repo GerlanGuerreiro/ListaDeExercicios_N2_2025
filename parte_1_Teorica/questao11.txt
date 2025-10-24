@@ -1,0 +1,134 @@
+11) Explique o funcionamento dos seguintes algoritmos de ordenação: Insertion sort, 
+Selection sort, Merge sort, Count sort, Quicksort.
+
+
+R: ## ALGORITMOS DE ORDENAÇÃO
+
+### 1. Insertion Sort (Ordenação por Inserção)
+
+O Insertion Sort é um algoritmo de ordenação simples que constrói o array ordenado final um item por vez através de comparações. Funciona de maneira similar a como organizamos cartas de baralho na mão durante um jogo.
+
+Como funciona:
+O algoritmo itera através da entrada, consumindo um elemento de cada vez e expandindo uma lista ordenada. Usa uma parte do array para manter os valores ordenados e outra parte para valores ainda não ordenados. A cada iteração, o algoritmo remove um elemento dos dados de entrada, encontra a posição correta dentro da lista ordenada e o insere lá.
+
+Complexidade:
+- Complexidade de tempo: O(n²) no pior e caso médio; O(n) no melhor caso (quando o array já está ordenado)
+- Complexidade de espaço: O(1), sendo um algoritmo de ordenação in-place
+
+Vantagens:
+Simples e fácil de implementar, algoritmo estável, eficiente para listas pequenas e listas quase ordenadas, eficiente em termos de espaço.
+
+Referências:
+- GeeksforGeeks. (2025). *Insertion Sort Algorithm*. Disponível em: https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/
+- Wikipedia. *Insertion sort*. Disponível em: https://en.wikipedia.org/wiki/Insertion_sort
+- W3Schools. *DSA Insertion Sort*. Disponível em: https://www.w3schools.com/dsa/dsa_algo_insertionsort.php
+
+---
+
+### 2. Selection Sort (Ordenação por Seleção)
+
+O Selection Sort é um algoritmo de ordenação baseado em comparação que ordena um array selecionando repetidamente o menor (ou maior) elemento da porção não ordenada e trocando-o com o primeiro elemento não ordenado.
+
+Como funciona:
+O algoritmo divide a lista de entrada em duas partes: uma sublista de itens ordenados que é construída da esquerda para direita no início da lista e uma sublista dos itens não ordenados restantes que ocupam o resto da lista. Para cada i de 1 a n-1, há uma troca e n-i comparações, resultando em um total de n-1 trocas.
+
+Complexidade:
+- Complexidade de tempo: O(n²) em todos os casos (melhor, médio e pior)
+- Complexidade de espaço: O(1), pois não requer memória adicional
+
+Vantagens:
+Fácil de entender e implementar, ideal para fins educacionais, requer apenas espaço constante O(1), necessita de menos número de trocas.
+
+Desvantagens:
+Não é adaptativo, ou seja, não tira vantagem de dados já ordenados ou parcialmente ordenados.
+
+Referências:
+- GeeksforGeeks. (2025). *Selection Sort*. Disponível em: https://www.geeksforgeeks.org/dsa/selection-sort-algorithm-2/
+- Wikipedia. *Selection sort*. Disponível em: https://en.wikipedia.org/wiki/Selection_sort
+- Programiz. *Selection Sort*. Disponível em: https://www.programiz.com/dsa/selection-sort
+
+---
+
+### 3. Merge Sort (Ordenação por Intercalação)
+
+O Merge Sort é um algoritmo de ordenação popular conhecido por sua eficiência e estabilidade, seguindo a abordagem de Dividir e Conquistar. Foi inventado por John von Neumann em 1945.
+
+Como funciona:
+Funciona dividindo recursivamente o array de entrada em duas metades, ordenando recursivamente as duas metades e finalmente intercalando-as de volta para obter o array ordenado. O processo consiste em três etapas principais:
+1. Dividir: Dividir a lista ou array recursivamente em duas metades até que não possa mais ser dividida
+2. Conquistar: Cada subarray é ordenado individualmente usando o algoritmo merge sort
+3. Combinar: Os subarrays ordenados são mesclados de volta em ordem ordenada
+
+Complexidade:
+- Complexidade de tempo: O(n log n) em todos os casos (melhor, médio e pior)
+- Complexidade de espaço: O(n), pois requer memória adicional para armazenar os subarrays mesclados
+
+Vantagens:
+Estável, desempenho garantido no pior caso de O(n log n), simples de implementar, naturalmente paralelo.
+
+Desvantagens:
+Requer memória adicional, não é in-place.
+
+Referências:
+- GeeksforGeeks. *Merge Sort*. Disponível em: https://www.geeksforgeeks.org/dsa/merge-sort/
+- Wikipedia. *Merge sort*. Disponível em: https://en.wikipedia.org/wiki/Merge_sort
+- W3Schools. *DSA Merge Sort*. Disponível em: https://www.w3schools.com/dsa/dsa_algo_mergesort.php
+
+---
+
+### 4. Counting Sort (Ordenação por Contagem)
+
+O Counting Sort é um algoritmo para ordenar uma coleção de objetos de acordo com chaves que são inteiros positivos pequenos; é um algoritmo de ordenação de inteiros. É particularmente eficiente quando o intervalo de valores de entrada é pequeno em comparação com o número de elementos a serem ordenados.
+
+Como funciona:
+Opera contando o número de objetos que possuem valores de chave distintos e aplicando soma de prefixos nessas contagens para determinar as posições de cada valor de chave na sequência de saída. A ideia básica é contar a frequência de cada elemento distinto no array de entrada e usar essa informação para colocar os elementos em suas posições ordenadas corretas.
+
+Etapas do algoritmo:
+1. Declarar um array de contagem de tamanho max(arr[])+1 e inicializá-lo com 0
+2. Percorrer o array de entrada e mapear cada elemento como índice do array de contagem
+3. Calcular a soma de prefixos no array de contagem
+4. Percorrer o array de entrada da direita para esquerda e posicionar cada elemento na posição correta no array de saída
+
+Complexidade:
+- Complexidade de tempo: O(n+k), onde n é o número de itens sendo ordenados e k é o número de valores possíveis
+- Complexidade de espaço: O(n+k)
+
+Vantagens:
+Geralmente tem desempenho mais rápido que todos os algoritmos de ordenação baseados em comparação, como merge sort e quicksort, se o intervalo de entrada for da ordem do número de entradas.
+
+Desvantagens:
+Não funciona com valores decimais, ineficiente se o intervalo de valores a serem ordenados for muito grande, não é um algoritmo de ordenação in-place.
+
+Referências:
+- Wikipedia. (2025). *Counting sort*. Disponível em: https://en.wikipedia.org/wiki/Counting_sort
+- GeeksforGeeks. *Counting Sort*. Disponível em: https://www.geeksforgeeks.org/dsa/counting-sort/
+- Programiz. *Counting Sort*. Disponível em: https://www.programiz.com/dsa/counting-sort
+
+---
+
+### 5. Quicksort (Ordenação Rápida)
+
+O Quicksort é um algoritmo de ordenação eficiente e de propósito geral desenvolvido pelo cientista da computação britânico Tony Hoare em 1959 e publicado em 1961. É um algoritmo de dividir e conquistar que funciona selecionando um elemento "pivô" do array e particionando os outros elementos em dois subarrays, de acordo com se são menores ou maiores que o pivô.
+
+Como funciona:
+O algoritmo particiona os elementos do array em dois subarrays com base no valor do pivô, colocando todos os elementos menores que o pivô de um lado e todos os elementos maiores do outro lado. Os subarrays são então ordenados recursivamente. Isso pode ser feito in-place, exigindo pequenas quantidades adicionais de memória para realizar a ordenação.
+
+Etapas principais:
+1. Selecionar um elemento pivô do array
+2. Particionar o array em relação ao pivô
+3. Ordenar recursivamente os subarrays resultantes
+
+Complexidade:
+- Complexidade de tempo: O(n log n) no melhor e caso médio; O(n²) no pior caso (quando o pivô escolhido é sempre o menor ou maior elemento)
+- Complexidade de espaço: O(log n) devido à pilha de recursão
+
+Vantagens:
+Ligeiramente mais rápido que merge sort e heapsort para dados aleatórios, particularmente em distribuições maiores. É um algoritmo in-place, não requerendo espaço extra significativo.
+
+Desvantagens:
+Em implementações eficientes, o Quicksort não é uma ordenação estável, ou seja, a ordem relativa de itens de ordenação iguais não é preservada.
+
+Referências:
+- Wikipedia. *Quicksort*. Disponível em: https://en.wikipedia.org/wiki/Quicksort
+- Codecademy. (2025). *Quick Sort Algorithm*. Disponível em: https://www.codecademy.com/resources/docs/general/algorithm/quick-sort
+- Medium - Nerd For Tech. (2023). *Quicksort Algorithm Explained*. Disponível em: https://medium.com/nerd-for-tech/quicksort-algorithm-explained-e2180a7cec2c
