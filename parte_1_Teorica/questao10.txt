@@ -29,6 +29,7 @@ i++;
 return i;
 }
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Busca binária: Ou pesquisa binária divide o conjunto de dados em duas partes e
 continua procurando pela chave na parte que potencialmente ela existiria. É

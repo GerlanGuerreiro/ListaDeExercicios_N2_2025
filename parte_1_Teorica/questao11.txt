@@ -4,7 +4,7 @@ Selection sort, Merge sort, Count sort, Quicksort.
 
 R: ## ALGORITMOS DE ORDENAÇÃO
 
-### 1. Insertion Sort (Ordenação por Inserção)
+  1. Insertion Sort (Ordenação por Inserção)
 
 O Insertion Sort é um algoritmo de ordenação simples que constrói o array ordenado final um item por vez através de comparações. Funciona de maneira similar a como organizamos cartas de baralho na mão durante um jogo.
 
@@ -25,7 +25,7 @@ Referências:
 
 ---
 
-### 2. Selection Sort (Ordenação por Seleção)
+  2. Selection Sort (Ordenação por Seleção)
 
 O Selection Sort é um algoritmo de ordenação baseado em comparação que ordena um array selecionando repetidamente o menor (ou maior) elemento da porção não ordenada e trocando-o com o primeiro elemento não ordenado.
 
@@ -49,7 +49,7 @@ Referências:
 
 ---
 
-### 3. Merge Sort (Ordenação por Intercalação)
+  3. Merge Sort (Ordenação por Intercalação)
 
 O Merge Sort é um algoritmo de ordenação popular conhecido por sua eficiência e estabilidade, seguindo a abordagem de Dividir e Conquistar. Foi inventado por John von Neumann em 1945.
 
@@ -76,7 +76,7 @@ Referências:
 
 ---
 
-### 4. Counting Sort (Ordenação por Contagem)
+  4. Counting Sort (Ordenação por Contagem)
 
 O Counting Sort é um algoritmo para ordenar uma coleção de objetos de acordo com chaves que são inteiros positivos pequenos; é um algoritmo de ordenação de inteiros. É particularmente eficiente quando o intervalo de valores de entrada é pequeno em comparação com o número de elementos a serem ordenados.
 
@@ -106,7 +106,7 @@ Referências:
 
 ---
 
-### 5. Quicksort (Ordenação Rápida)
+  5. Quicksort (Ordenação Rápida)
 
 O Quicksort é um algoritmo de ordenação eficiente e de propósito geral desenvolvido pelo cientista da computação britânico Tony Hoare em 1959 e publicado em 1961. É um algoritmo de dividir e conquistar que funciona selecionando um elemento "pivô" do array e particionando os outros elementos em dois subarrays, de acordo com se são menores ou maiores que o pivô.
 
