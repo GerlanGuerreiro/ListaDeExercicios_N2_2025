@@ -1,8 +1,11 @@
 # 📚 Lista de Exercícios N2 – 2025  
 
 ✍️ Disciplina: Estrutura de Dados II – 2025
+
 📍 Universidade: Centro Universitário Fametro
+
 👨‍🏫 Professor: Tiago Santos Figueira
+
 
 👥 Equipe:
 
